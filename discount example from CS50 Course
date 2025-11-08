@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <cs50.h>
-#include <string.h>
-#include <ctype.h> 
 
 
 //(C Lang)
@@ -33,7 +31,7 @@ int main(void){
 }
 
 
-//the function the take the value of this variables 1: price 2:percen and use them to make the calculation of the discount.
+//the function that take the value of this variables (1: price, 2:percen) and use them to make the calculation of the discount.
 double calculate_discount(int getting_price,double getting_percen){
 	return getting_price * (100-getting_percen)/100;
 }
