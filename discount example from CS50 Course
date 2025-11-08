@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+#include <ctype.h> 
+
+
+//(C Lang)
+//this code for: make a function that take(price and percent) from user and give user the final price=(discount).
+//EX:: user need to calcutale: 500$_PC have 20%_discount, What is the price after discount ?
+//apply on discount example from CS50 Course
+
+
+//define function on top to make the programming language know it.
+double calculate_discount(int getting_price,double getting_percen);
+
+
+int main(void){
+    //take the price from user, user can add price like(1,2,500) no (1.5 or 500.5).
+    int price = get_int("what is the price?\n");
+
+    //take the discount percent from user, user can add discount (20% or 20.5%).
+	  double percent = get_double("the percent is:\n");
+
+    //this is a variable has a vaule of the functuin named(discount), the function take price+percen varibales and use them inside it(function).
+	  double discount = calculate_discount(price,percent);
+
+    //the program will give a text line and the value of discount variable.
+	  printf("Your Discount= %0.2f \n",discount);
+
+    //just draw a line at the end.
+    printf("____________\n");
+
+}
+
+
+//the function the take the value of this variables 1: price 2:percen and use them to make the calculation of the discount.
+double calculate_discount(int getting_price,double getting_percen){
+	return getting_price * (100-getting_percen)/100;
+}
