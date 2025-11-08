@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <cs50.h>
+
+
+//A Code that make lines and question marks, based on user needs.
+
+int main(void){
+
+
+//the hidden part: method_1, of make a while loop that repeat for 1 time at first to start.
+
+/*
+//Start of hidden part.
+
+//nq: mean number of the question marks, that user want to print.
+//( the valuse of nq=-1 ) to make the condition start.
+	int nq = -1;
+
+//the loop here have condition that force The_User to make positive number that bigger than 0.
+	while(nq < 0){
+	nq = get_int("how many question marks? ");
+	}
+
+
+//lines_n: mean number of lines, that user want to print.
+//( the value of lines_n=-1 ) to make the condition start.
+	int lines_n = -1;
+
+//the loop here have condition that force The_User to make positive number that bigger than 0.
+	while(lines_n < 0){
+	lines_n = get_int("how many lines? ");
+	}
+
+//End of hidden part.
+*/
+
+
+
+//method_2: using (do + while).
+//nq: mean number of the question marks, that user want to print.
+	int nq;
+	do{
+	nq = get_int("how many question marks? ");
+	}while(nq < 0);
+
+//lines_n: mean number of lines, that user want to print.
+	int lines_n;
+	do{
+	lines_n = get_int("how many lines? ");
+	}while(lines_n < 0);
+
+
+
+//the outside for_loop: how many line user want to make?.
+	for(int i = 0 ; i<lines_n ; i++){
+
+//the inside for_loop: print how many question marks user want to make?.
+		for(int a = 0 ; a<nq ; a++){
+		printf("?");
+		}
+
+	printf("\n");
+	}
+
+
+    printf("____________\n");
+}
