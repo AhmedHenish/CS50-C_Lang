@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <cs50.h>
+
+
+//make Array and take value from user and apply calculation on it.
+
+int main(void){
+
+//Array named: numbers.
+	int numbers[3];
+
+//For Loop: make take array values.
+	for(int i = 0 ; i<3 ; i++){
+	numbers[i] = get_int("what is the number ? ");
+	}
+
+printf("The Average: %0.2f \n", (numbers[0]+numbers[1]+numbers[2])/3.0);
+
+
+    printf("____________\n");
+}
