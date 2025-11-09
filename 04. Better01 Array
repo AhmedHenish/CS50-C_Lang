@@ -21,7 +21,7 @@ int main(void){
 //print the number of the index.
 	printf("index now: %d \n",i);
 //the loop code.
-	numbers[i] = get_int("what is the number ? ");
+	numbers[i] = get_int("what is the value ? ");
 	addition += numbers[i];
 	}
 
