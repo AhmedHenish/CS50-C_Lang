@@ -9,7 +9,7 @@ int main(void){
 //Array named: numbers.
 	int numbers[3];
 
-//For Loop: make take array values.
+//For Loop: take array values.
 	for(int i = 0 ; i<3 ; i++){
 	numbers[i] = get_int("what is the number ? ");
 	}
