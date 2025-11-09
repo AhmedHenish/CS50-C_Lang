@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <cs50.h>
+
+//make Array that take it's length from user + calculate average.
+
+int main(void){
+
+//Variable named: array_length, take the array length from user.
+	int array_length = get_int("How many array index you want? ");
+
+//Variable named: addition, addition the array values with each other.
+	int addition = 0;
+
+//Array named: numbers.
+	int numbers[array_length];
+
+
+//For Loop: take array values.
+	for(int i = 0 ; i<array_length ; i++){
+
+//print the number of the index.
+	printf("index now: %d \n",i);
+//the loop code.
+	numbers[i] = get_int("what is the number ? ");
+	addition += numbers[i];
+	}
+
+printf("The Average: %0.2f \n", addition / (double)array_length );
+
+
+    printf("____________\n");
+}
