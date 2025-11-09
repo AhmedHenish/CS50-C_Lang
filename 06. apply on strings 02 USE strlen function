@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <cs50.h>
+
+//library for "strlen".
+#include <string.h>
+
+//apply on library "strlen" that calculate the number of charts of the string.
+
+int main(void){
+
+//vraiable named text: take any text from user.
+	string text = get_string("the text is: ");
+
+//vraiable named the_count: apply the function"strlen".
+	int the_count = strlen(text);
+
+//print the text + the charts number(the function value).
+	printf("The text: %s, The chars count: %i \n",text,the_count);
+
+    printf("____________\n");
+}
