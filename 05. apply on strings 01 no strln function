@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <cs50.h>
+
+
+//apply on strings as they are "array".
+
+//identify the function.
+	int f_count_text(string take_text);
+
+int main(void){
+
+//vraiable named text: take any text from user.
+	string text = get_string("the text is: ");
+
+//vraiable named the_count: get the value of the function(f_count_text).
+	int the_count = f_count_text(text);
+
+//print the text + the charts number(the function value).
+	printf("The text: %s, The chars count: %i \n",text,the_count);
+
+    printf("____________\n");
+}
+
+//function names f_count_text: this f. , go to text charts and count them, then return the sum of charts.
+	int f_count_text(string take_text){
+	int i = 0;
+	while(take_text[i] != '\0'){
+ 	i++;
+	}
+	return i;
+	}
