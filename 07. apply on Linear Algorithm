@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <cs50.h>
+
+
+//apply on Linear Algorithm
+//code that have Array(get number of index from user + value of index).
+//then search about value (from user)+ store the search keyword alone so user can see it and make sure about it.
+
+int main(void){
+
+//what you want to search about?
+int search_about = get_int("what you want to search about? ");
+//you search about(to make sure).
+	printf("You search about: %i \n", search_about);
+
+//How many Index in Array ?
+int index_in_array = get_int("how many index to use in array? ");
+
+
+//Array
+int the_array[index_in_array];
+
+
+//for Loop: to make user add the value of Array index.
+	for(int i = 0; i < index_in_array ; i++ ){
+		the_array[i] = get_int("write index value %i: ", i);
+	}
+//search method: Linear Algorithm.
+//for Loop: to search in (Array index) about what user want.
+	for(int a = 0; a < index_in_array ; a++ ){
+
+//this line for Testing to make sure code in Right.
+		printf("(For Testing): index number: %i | Total index: %i \n", a , index_in_array);
+
+//if: that give us the result after search finish if it's Ture.
+		if(search_about == the_array[a]){
+		printf("Found, at index number:%i \n",a);
+		return 0;
+		}
+	}
+
+//the result of search if it's False.
+	printf("Not there\n");
+
+
+    printf("____________\n");
+}
+
+
