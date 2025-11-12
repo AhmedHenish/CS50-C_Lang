@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+
+//apply on Linear Algorithm
+//compare two strings use function: strcmp(). , in library: string.h.
+
+int main(void){
+
+//Array
+string names[] = {"ahmed", "mohammed", "ali", "hema", "jake", "hend", "zack"};
+
+
+//search method: Linear Algorithm.
+//for Loop: search in Array index about something.
+	for(int i = 0; i < 7 ; i++ ){
+
+		//if: use the function strcmp() to compare two strings (== 0 ,if found).
+		if(strcmp(names[i], "zack") == 0){
+		printf("Found, at index number:%i \n",i);
+		return 0;
+		}
+	}
+
+
+//the result of search if it's False.
+	printf("Not there\n");
+
+
+    printf("____________\n");
+}
+
+
